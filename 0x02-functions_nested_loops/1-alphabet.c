@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet
+ * print_alphabet - print the english a-z
  * return
  *
  */
