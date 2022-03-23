@@ -1,18 +1,17 @@
+#include "main.h"
+
 /**
- * _strncpy - copies a string up to n
- * @dest: Destination of the pointer to the string
- * @src: Source of the pointer to the string to copy
- * @n: Number of bytes to copy.
- * Return: Pointer to the destination string.
+ * swap_int - swaps the values of int a and int b
+ * @a: first int to swap
+ * @b: second int to swap
+ *
+ * Return: void
  */
-
-char *_strncpy(char *dest, char *src, int n)
+void swap_int(int *a, int *b)
 {
-	int i;
+	int c;
 
-	for (i = 0; src[i] != '\0' && i < n; i++)
-		dest[i]	= src[i];
-	while (i < n)
-		dest[i++] = '\0';
-	return (dest);
+	c = *a;
+	*a = *b;
+	*b = c;
 }
